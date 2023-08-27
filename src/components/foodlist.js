@@ -12,7 +12,7 @@ function FoodList() {
 
   const handleAddFood = () => {
     setIsFirstCardEnabled(true);
-    setIsSecondCardEnabled(true);
+    setIsFormEnabled(true); // Enable form when "Add Food" is clicked
   };
 
   const handleFormClick = () => {
