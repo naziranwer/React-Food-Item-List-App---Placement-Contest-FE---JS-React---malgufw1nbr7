@@ -12,7 +12,6 @@ function FoodList() {
 
   const handleAddFood = () => {
     setIsFirstCardEnabled(true);
-    setIsFormEnabled(true); // Enable form when "Add Food" is clicked
   };
 
   const handleFormClick = () => {
@@ -72,6 +71,7 @@ function FoodList() {
             <div
               className={`card ${isFormEnabled ? "" : "disabled"}`}
               onClick={handleFormClick}
+              style={{ opacity: isFormEnabled ? 1 : 0.5 }} // Set opacity based on isFormEnabled
             >
               <form>
                 <h2>Spiciness Level:</h2>
